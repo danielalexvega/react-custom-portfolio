@@ -3,7 +3,7 @@
   position:fixed;
   top:0;
   left:0;
-  background-color: #0A0A0A;
+  background-color:var(--rich-black);
   height: 56px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .toolbar_logo a{
-  color:#FAFEEE;
+  color:var(--ivory);
   text-decoration: none;
   font-size:1.5rem;
 }
@@ -40,11 +40,27 @@
 }
 
 .toolbar_navigation-items a {
-  color: #FAFEFE;
+  color:var(--ivory);
   text-decoration: none;
 }
 
 .toolbar_navigation-items a:hover,
 .toolbar_navigation-items a:active {
-  color: #D29137;
+  color:var(--harvest-gold);
+}
+
+@media (max-width: 768px) {
+  .toolbar_navigation-items {
+    display:none;
+  }
+}
+
+@media (min-width:769px) {
+  .toolbar_toggle-button{
+    display:none;
+  }
+
+  .toolbar_logo {
+    margin-left:0;
+  }
 }
