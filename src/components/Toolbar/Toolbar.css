@@ -7,6 +7,10 @@
   height: 56px;
 }
 
+.toolbar_logo {
+  margin-left:1rem;
+}
+
 .toolbar_navigation {
   display:flex;
   height:100%;
